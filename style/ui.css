@@ -1,0 +1,120 @@
+nav.menu {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 4em;
+  padding: .5em;
+  display: flex;
+  justify-content: space-around; }
+  nav.menu a {
+    color: #d3d5e3; }
+
+div.code-day-count {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3em;
+  height: calc(100% - 3em); }
+  div.code-day-count h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em; }
+  div.code-day-count div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    div.code-day-count div.total-days {
+      flex-basis: 100%;
+      font-size: 2em; }
+      div.code-day-count div.total-days span {
+        height: 200px; }
+    div.code-day-count div:not(.total-days) {
+      flex-basis: 50%; }
+    div.code-day-count div span {
+      background-color: white;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+div.Code-day-list {
+  height: calc(100% - 13em);
+  overflow-y: scroll; }
+  div.Code-day-list table {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: verdana, sans-serif;
+    font-size: 1.5em;
+    text-align: center; }
+    div.Code-day-list table th {
+      text-align: center; }
+    div.Code-day-list table td {
+      padding: .2em; }
+    div.Code-day-list table a {
+      margin: 15px; }
+    div.Code-day-list table .filter {
+      text-align: center;
+      font-size: .6em;
+      padding-top: 30px; }
+
+div.show-errors {
+  width: 100%; }
+  div.show-errors div {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    background-color: red;
+    color: white;
+    font-family: verdana, sans-serif;
+    display: flex;
+    justify-content: space-between; }
+    div.show-errors div svg {
+      font-size: 2em;
+      position: relative;
+      top: 9px;
+      right: 9px; }
+
+form.add-day-form {
+  font-family: Verdana, sans-serif;
+  width: 70%;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  height: calc(100% - 12em); }
+  form.add-day-form > label,
+  form.add-day-form div {
+    margin: 1em 0; }
+  form.add-day-form label {
+    font-size: 1.5em;
+    text-shadow: 3px 3px 10px #d3d5e3;
+    height: 10px;
+    font-weight: bold; }
+  form.add-day-form input[type="text"],
+  form.add-day-form input[type="date"] {
+    font-size: 1.5em;
+    padding: .25em;
+    border-radius: .2em;
+    outline: none;
+    min-height: 36px; }
+  form.add-day-form input[type="checkbox"] {
+    transform: scale(2);
+    margin: 0;
+    padding: 0;
+    margin-right: 2em; }
+  form.add-day-form div > label {
+    position: relative;
+    top: 2px; }
+  form.add-day-form button {
+    margin: auto;
+    width: 100%;
+    font-size: 2em;
+    background-color: #8a2a2d;
+    font-weight: bold;
+    color: #d3d5e3;
+    padding: 5px; }
+
+/*# sourceMappingURL=ui.css.map */
